@@ -1,0 +1,38 @@
+/*=========================
+        Basic Layout
+============================  */
+
+* {
+    font-family: sans-serif;
+    color: #fff;
+}
+
+header {
+    background-color: #53ab82;
+}
+
+banner {
+    background-color: #a3c1ad;
+}
+
+main {
+    background-color: #32363d;
+}
+
+footer {
+    background-color: #000000;
+}
+
+/* ---- Nested Layout ---- */
+
+.technology {
+    background-color: #53ab82
+}
+
+.technology {
+    background-color: #a3c1ad
+}
+
+.features {
+    background-color: #317873;
+}

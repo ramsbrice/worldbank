@@ -1,0 +1,60 @@
+/*=========================
+         Basic Grid Layout
+============================  */
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px repeat(2, minmax(200px, auto)) 100px;
+    grid-gap: 10px;
+    grid-template-areas:
+        "header"
+        "banner"
+        "main"
+        "footer"
+}
+
+header {
+    grid-area: header;
+}
+
+banner {
+    grid-area: banner;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* ---- Nested Grids ----  */
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, minmax(100px, 1fr));
+    grid-template-areas:
+        "company"
+        "technology"
+        "features"
+}
+
+.company {
+    grid-area: company;
+}
+
+.technology {
+    grid-area: technology;
+}
+
+.features {
+    grid-area: features;
+}
+
+/*=========================
+        Media Queries
+============================  */

@@ -1,0 +1,241 @@
+
+/* ==========================
+          Base Styles
+============================*/
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+    text-align: justify;
+	line-height: 1.6;
+	color: #76a076;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.5em;
+}
+
+h2,
+h3,
+a {
+	color: #406840;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+footer h3 {
+    color: #fff;
+}
+/* ==========================
+          Base Layout Styles
+============================*/
+
+/* ---- Navigation ---- */
+
+.name {
+    font-size: 2em;
+    margin: 0;
+}
+
+.menu {
+    margin-top: 5px;
+    padding-left: 0px;
+} /*--new--*/
+
+
+
+.name,
+.menu li{
+    text-align: center;
+    text-emphasis: bold;
+    background: #fff;
+    list-style: none;
+}
+
+.menu a {
+    font-size: .95em;
+	color: #76a076;
+}
+
+.name a,
+.menu a {
+    padding: 5px 10px;
+    text-align: center;
+    display: block;
+}
+
+.menu a:hover {
+    color: green;
+}
+
+.features {
+    clear: both;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.container {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.banner,
+.main-footer {
+	text-align: center;
+}
+
+.banner {
+    color: #fff;
+    height: 500px;
+    background: #41c64c;
+    background-image: url("Pictures/city-park.jpg");
+    background-size: cover;
+    background-position: bottom;
+    padding: 3.2em 0;
+    margin-bottom: 60px;
+}
+
+.col {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.main-footer {
+	text-align: center;
+	padding: 2em 0;
+	background: #31a049;
+    color: #fff;
+}
+
+/* ---- Page Element ----*/
+
+.logo {
+    width: 190px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.headline {
+    bottom-margin: 0;
+}
+
+
+
+
+/* ==========================
+          Media Queries
+============================*/
+
+@media (min-width: 769px) {
+
+    .wrap {
+        min-height: calc(100vh - 89px);
+    }
+
+    body {
+        padding-top: 60px;
+    }
+
+
+    .contain1,
+    .contain3 {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .contain2 {
+        background-color: #eaefeb;
+        margin: 0 -20px 0 -20px;
+    }
+
+    .technology {
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+    .main-header {
+        width: 100%;
+        position: fixed;
+        background: #fff;
+        box-shadow: 0 1px 4px rgba(0,0,0,.4);
+        top: 0;
+    }
+
+/*
+    .name,
+    .menu,
+    .menu li {
+        display: inline-block;
+    }
+*/
+
+/*
+    .name {
+        width: 200px;
+        margin-right: 240px;
+    }
+*/
+
+    .name, .side {
+        float: left;
+        vertical-align: top;
+    }
+
+    .first {
+        padding-right: 1em;
+    }
+    .second {
+        padding-left: 1em;
+    }
+    .menu {
+        float: right;
+    }
+
+    .menu li {
+        margin-right: -4.5px;
+        float: left;
+    }
+
+    .tagline {
+        font-size: 1.4em;
+    }
+
+
+    .feat-img {
+        width: 500px;
+        margin-top: 5px;
+        margin-right: 25px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+/* ---- Float fix ---- */
+
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+    .footer {
+        display: block;
+    }
+}
